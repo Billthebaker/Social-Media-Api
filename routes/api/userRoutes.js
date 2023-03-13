@@ -1,10 +1,11 @@
 const router = require('express').Router();
+const { User } = require('../../models/index')
 
 // Get a list of all users
 router.get('/', async (req, res) => {
     try {
       const users = await User.find().populate('thoughts').populate('friends');
-      res.json(users);
+      res.status(200).json(users);
     } catch (err) {
       res.status(500).json(err);
     }
@@ -14,7 +15,7 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
     try {
       const user = await User.create(req.body);
-      res.status(201).json(user);
+      res.json(user);
     } catch (err) {
       res.status(500).json(err);
     }

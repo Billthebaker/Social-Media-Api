@@ -14,7 +14,7 @@ const thoughtSchema = new mongoose.Schema({
   reactions: [{
     reactionBody: {
       type: String,
-      required: true,
+      required: false,
       minlength: 1,
       maxlength: 280
     },

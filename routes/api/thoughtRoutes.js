@@ -1,5 +1,5 @@
 const router = require('express').Router();
-//const { Thought, User, Reaction } = require('../models');
+const { Thought, User, Reaction } = require('../../models');
 
 // Get all thoughts
 router.get('/', async (req, res) => {
@@ -26,6 +26,7 @@ router.post('/', async (req, res) => {
 
     res.status(201).json(thought);
   } catch (err) {
+    console.error(err)
     res.status(500).json(err);
   }
 });

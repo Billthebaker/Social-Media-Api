@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const User = require('../models/User');
+const User = require('../../models/User');
 
 // Add a friend to a user's friend list
 router.post('/:id/friends/:friendId', async (req, res) => {
