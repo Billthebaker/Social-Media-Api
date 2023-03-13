@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
-const thoughtSchema = new mongoose.Schema({
-  thoughtText: {
+const reactionSchema = new mongoose.Schema({
+  reactionBody: {
     type: String,
     required: true,
     minlength: 1,
@@ -11,12 +11,12 @@ const thoughtSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  reactions: [{
+  thought: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Reaction'
-  }]
+    ref: 'Thought'
+  }
 }, { timestamps: true });
 
-const Thought = mongoose.model('Thought', thoughtSchema);
+const Reaction = mongoose.model('Reaction', reactionSchema);
 
-module.exports = Thought;
+module.exports = Reaction;

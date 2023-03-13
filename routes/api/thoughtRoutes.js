@@ -81,6 +81,7 @@ router.delete('/:id', async (req, res) => {
       res.json({ message: 'Thought deleted' });
     }
   } catch (err) {
+    console.error(err)
     res.status(500).json(err);
   }
 });
@@ -102,6 +103,7 @@ router.post('/:id/reactions', async (req, res) => {
         res.status(201).json(reaction);
       }
     } catch (err) {
+      console.error(err)
       res.status(500).json(err);
     }
   });
