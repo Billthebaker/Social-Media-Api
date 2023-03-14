@@ -2,10 +2,7 @@
   - [Project description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Contribution](#contribution)
-  - [Tests](#tests)
   - [Questions](#questions)
-  - [License](#license)
 
   ## Description
   This is a program to create api data for a social media website that includes, Comment data, Comment on comment data(Reactions), Creating and updating users.
@@ -17,14 +14,11 @@
   `npm i` in the code terminal
   `node index.js` in the code terminal
   once the port is live then open insomnia!
-  Video Tutorial:
+  Video Tutorial: https://drive.google.com/file/d/1wOWiJpycUBY5MN8ykZ-tDGRHFDcmtvy6/view
 
   ## Usage
   To create the basic back end code of a social media site, with commenting, subcommenting, and creating users!
 
 
   ## Questions
-
-
-  ## License
-  [![License: mit](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  CONTACT ME: DBP1795@aim.com Github:Billthebaker
